@@ -89,16 +89,17 @@ Based on our findings, we propose the following:
 > Given time constraints, we prioritized visualizations that directly aligned with our business question, those that highlighted licensing rates across boroughs, and showcased dog age distribution. These visuals most effectively support our case for targeted town halls and public health campaigns.
 
 **Repo Navigation**
+```
+├── data/
+│   ├── raw/
+│         └──NYC_Dog_Licensing_Dataset_20250713.csv
+│   └── cleaned/
+│        └── final_dataset.csv
+│──  notebooks/
+│        └── data_cleaning.ipynb
+└── README.md
 
-   ├── data/
-   │   ├── raw/
-   │         └──NYC_Dog_Licensing_Dataset_20250713.csv
-   │   └── cleaned/
-   │        └── final_dataset.csv
-   │──  notebooks/
-   │        └── data_cleaning.ipynb
-   └── README.md
-
+```
 **People who collaborated in this project**
 - Ibrahima Diallo: [LinkedIn](https://www.linkedin.com/in/ibranova/)
 - Kevin Serrano Lopez: [LinkedIn](https://www.linkedin.com/in/kevin-serrano-lopez/)
