@@ -65,6 +65,50 @@ The dashboard answers this question by identifying:
 
       Find the final interactive dashboard built in Tableau here: [Dashboard](https://public.tableau.com/app/profile/kevin.serrano6220/viz/MODproject_17526900544830/Dashboard1?publish=yes)
 
+## Business Recommendations
+
+Based on our findings, we propose the following:
+- Focus town halls in ZIP codes with high licensing activity (e.g., 11211, 10025).
+- Schedule outreach between **April and July**, when license rates are highest.
+- Tailor content to **new dog owners and puppies**, since most dogs are under 3 years old.
+- Consider breed popularity by neighborhood when planning event topics or services.
+
+  These efforts support:
+  - Stronger community relationships
+  - Enhanced public safety
+  - Improved animal care and control
+  - Higher rates of responsible pet ownership citywide
+ 
+## Project Reflection
+
+**Most Important Insight**:
+> Most licenses are issued in the spring and early summer, and a large number of them are for very young dogs. This suggests town halls should focus on new dog owner support and be held between **April and July**, in areas with high registration activity.
+> Also, the dashboard reveals the average age of dogs at the time of licensing. Late licensing can lead to missed vaccinations, raising public health risks, particularly related to rabies, a disease that poses a danger to both pets and humans.
+
+**Prioritizing Dashboard Features**
+> Given time constraints, we prioritized visualizations that directly aligned with our business question, those that highlighted licensing rates across boroughs, and showcased dog age distribution. These visuals most effectively support our case for targeted town halls and public health campaigns.
+
+**Repo Navigation**
+
+   ├── data/
+   │   ├── raw/
+   │         └──NYC_Dog_Licensing_Dataset_20250713.csv
+   │   └── cleaned/
+   │        └── final_dataset.csv
+   │──  notebooks/
+   │        └── data_cleaning.ipynb
+   └── README.md
+
+**People who collaborated in this project**
+- Ibrahima Diallo: [LinkedIn](https://www.linkedin.com/in/ibranova/)
+- Kevin Serrano Lopez: [LinkedIn](https://www.linkedin.com/in/kevin-serrano-lopez/)
+- Itzel Sanchez: [LinkedIn](https://www.linkedin.com/in/itzel-sanchez-8932b6334/)
+
+
+
+
+
+
      
 
 
