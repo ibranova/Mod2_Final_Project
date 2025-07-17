@@ -10,29 +10,32 @@ The project includes data cleaning and feature engineering in Python, followed b
 **Stakeholder:** New York City Director of Animal Services.
 
 The goal is to help the shareholder connect with dog owners by hosting seasonal town halls, sharing resources, and educating the public about dog licensing and pet care.
-So our team has focused on finding the lowest and highest rates at which dog licenses are issued throughout the boroughs of New York City, and the average age at which dog licenses are issued. 
+These insights connect directly to public health by emphasizing the importance of early dog registration—ideally within the year a puppy is born—to promote timely vaccinations and responsible pet ownership.
 
 ## Core Business Question: 
 > **Are there patterns in current dog licensing rates that help us plan and promote future town halls more effectively?**
 The dashboard answers this question by identifying:
-- Where dog licenses are concentrated (geographically)
-- When licenses are issued most frequently (seasonally)
+- The lowest and highest rates of dog license issuance across NYC boroughs.
+- When licenses are issued, most frequently.
+- The average age at which dogs are licensed.
 - The dog age distribution  
 
 ## Exploratory Data Analysis (EDA) in Python
 **Tools Used:** `pandas`, `matplotlib`, `seaborn`, and `plotly`
 
 1. **Data Cleaning**
-   Our team started its data cleaning process by making sure each column was corrected format. This included:
+   Our team started its data cleaning process by making sure each column was in the correct format. This included:
    - Renaming the columns for easy data handling
-   <img width="428" height="172" alt="Screenshot 2025-07-16 at 11 51 01 PM" src="https://github.com/user-attachments/assets/e3963b55-e645-4151-a992-03aca0304920" />
+
+     <img width="428" height="172" alt="Screenshot 2025-07-16 at 11 51 01 PM" src="https://github.com/user-attachments/assets/e3963b55-e645-4151-a992-03aca0304920" />
 
    - Removing rows with missing values (e.g., gender, breed, ZIP, date).
    -   We dropped 1810 rows in the `name column`, 21 rows in `Gender`, and 82 in `Licence expire date`. We dropped all these rows because they only represent 1% of all the data in our dataset
    - Checking the data type for each column in the dataset, and next changing the one in the wrong format.
      <img width="539" height="116" alt="Screenshot 2025-07-16 at 11 59 03 PM" src="https://github.com/user-attachments/assets/ab94f70f-1bfa-4cf4-a833-24928f1a4704" />
 
-   - Matching NYC zip codes to their corresponding boroughs. Pin-pointing neighborhoods. This was done by creating a function. We first created a dictionary that defined the borough names with their corresponding zip codes. The function get_borough() takes in a zipcode as an argument and checks to see if that zipcode falls within the listed dictionary. If it does, then it returns the borough name. For example, any zipcode from 10001 - 10282 would be considered Manhattan, and so forth.
+   - We created a get_borough() function that maps zip codes to boroughs using a custom dictionary. For example, zip codes from 10001–10282 are assigned to Manhattan
+
      <img width="633" height="434" alt="Screenshot 2025-07-17 at 12 01 55 AM" src="https://github.com/user-attachments/assets/c5f3b98c-63fa-4b07-98fb-cc10449ce89a" />
 
   2. **Feature Engineering**
@@ -46,17 +49,16 @@ The dashboard answers this question by identifying:
 
   3. **Export**
 
-     The final cleaned dataset is saved as `final_dataset.csv` for use in Tableau.
+      - The final cleaned dataset is saved as `final_dataset.csv` for use in Tableau.
 
-     <img width="384" height="33" alt="Screenshot 2025-07-17 at 12 23 40 AM" src="https://github.com/user-attachments/assets/295d0eae-6b37-4035-8248-a9e9719cc3be" />
+        <img width="384" height="33" alt="Screenshot 2025-07-17 at 12 23 40 AM" src="https://github.com/user-attachments/assets/295d0eae-6b37-4035-8248-a9e9719cc3be" />
 
 
 
   5. Tableau Workflow / Visualizations
      
      After importing the cleaned dataset in Tableau, our team was tasked with creating data visualizations with easier access to the information when it comes to              neighborhoods with the highest and lowest Dog licenses issued, and the average ages of dogs for which these licenses are issued, which can help create awareness and       contribute to public health safety. 
-        <img width="1357" height="734" alt="image" src="https://github.com/user-attachments/assets/2099d6fd-293d-4cd5-8e69-7dc3dac72dd3" />
-
+         <img width="2714" height="1468" alt="dash_image" src="https://github.com/user-attachments/assets/b9e656a7-0d47-4f1d-9c27-95816b9b9c17" />
 
       Our dashboard allows users to:
      - Filter by borough and license issue year.
@@ -69,10 +71,13 @@ The dashboard answers this question by identifying:
 ## Business Recommendations
 
 Based on our findings, we propose the following:
-- Focus town halls in ZIP codes with high licensing activity (e.g., 11211, 10025).
-- Schedule outreach between **April and July**, when license rates are highest.
-- Tailor content to **new dog owners and puppies**, since most dogs are under 3 years old.
-- Consider breed popularity by neighborhood when planning event topics or services.
+- Increase licensing in underrepresented boroughs
+  - Focus outreach efforts in neighborhoods with the lowest registration rates.
+- Promote early licensing (<2 years old)
+  Tailor content to **new dog owners and puppies**, since most dogs are under 3 years old.
+  - This improves vaccination tracking and contributes to rabies prevention.
+- Targeted town halls:
+  - Host town halls in areas with low licensing rates and Boroughs with high numbers of older, unlicensed dogs (>5 years old). 
 
   These efforts support:
   - Stronger community relationships
@@ -105,6 +110,9 @@ Based on our findings, we propose the following:
 - Ibrahima Diallo: [LinkedIn](https://www.linkedin.com/in/ibranova/)
 - Kevin Serrano Lopez: [LinkedIn](https://www.linkedin.com/in/kevin-serrano-lopez/)
 - Itzel Sanchez: [LinkedIn](https://www.linkedin.com/in/itzel-sanchez-8932b6334/)
+
+
+
 
 
 
