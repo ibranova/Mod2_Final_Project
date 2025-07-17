@@ -58,7 +58,9 @@ The dashboard answers this question by identifying:
   5. Tableau Workflow / Visualizations
      
      After importing the cleaned dataset in Tableau, our team was tasked with creating data visualizations with easier access to the information when it comes to              neighborhoods with the highest and lowest Dog licenses issued, and the average ages of dogs for which these licenses are issued, which can help create awareness and       contribute to public health safety. 
-         <img width="2714" height="1468" alt="dash_image" src="https://github.com/user-attachments/assets/b9e656a7-0d47-4f1d-9c27-95816b9b9c17" />
+         <img width="1428" height="814" alt="image" src="https://github.com/user-attachments/assets/04edacfa-5157-4587-a90d-f0ff5fd2b471" />
+
+
 
       Our dashboard allows users to:
      - Filter by borough and license issue year.
